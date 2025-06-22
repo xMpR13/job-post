@@ -12,12 +12,15 @@ const UserDetails: React.FC = () => {
 
       <div className="pt-2">
         <div className="flex items-center gap-2">
-          <h2 className="text-4xl text-amber-500 font-semibold">Thursday</h2>
+          <h2 className="text-4xl text-amber-500 font-semibold">Prospering</h2>
           <img src={VerifiedMark} alt="Verified badge" className="w-6 h-6" />
         </div>
 
-        <div className="flex gap-1 text-gray-700 mt-1">
-          Posted in <span className="font-bold text-black">TikkaBomb💣</span>
+        <div className="flex gap-1 text-gray-700 dark:text-gray-300 mt-1">
+          Posted in{" "}
+          <span className="font-bold text-black dark:text-white">
+            TikkaBomb💣
+          </span>
         </div>
       </div>
     </div>

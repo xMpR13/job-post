@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# Job Card UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern React + Tailwind CSS that displays a job posting card
 
-Currently, two official plugins are available:
+## Things used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Icons**
 
-## Expanding the ESLint configuration
+## Features/ Notable things
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Displays the job title and description
+- Shows a list of relevant skills needed
+- Includes salary and location details
+- Two buttons: `Message` and `Apply Now`
+- User profile with a verified badge
+- Supports dark mode
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to use
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the project
+2. Install dependencies: `npm install`
+3. Start the app: `npm run dev`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Screenshots
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Dark & Light Mode Preview
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">🌙 Dark Mode</th>
+      <th align="center">☀️ Light Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="dark.jpg" alt="Dark Mode Screenshot" width="300" />
+      </td>
+      <td align="center">
+        <img src="light.jpg" alt="Light Mode Screenshot" width="300" />
+      </td>
+    </tr>
+  </tbody>
+</table>
