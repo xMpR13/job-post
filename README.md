@@ -24,7 +24,6 @@ A simple and modern React + Tailwind CSS that displays a job posting card
 2. Install dependencies: `npm install`
 3. Start the app: `npm run dev`
 
-## Screenshots
 
 ## Dark & Light Mode Preview
 
